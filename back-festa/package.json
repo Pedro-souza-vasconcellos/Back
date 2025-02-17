@@ -1,0 +1,22 @@
+{
+  "name": "back-festa",
+  "version": "1.0.0",
+  "description": "back-end site imagens festa",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "festa",
+    "imagens"
+  ],
+  "author": "Pedro Souza",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "pg": "^8.13.3"
+  }
+}
