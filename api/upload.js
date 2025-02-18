@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
   cors(corsOptions)(req, res, async () => {  // Chamada correta do middleware CORS
     
     // Configura o multer para processar arquivos corretamente
-    upload.single('imagem')(req, res, async (err) => {
+    upload.single('image')(req, res, async (err) => {
       if (err) {
         return res.status(500).json({ erro: 'Erro ao processar o upload' });
       }
