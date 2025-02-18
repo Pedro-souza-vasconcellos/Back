@@ -11,8 +11,7 @@ const corsOptions = {
 const upload = multer({ storage: multer.memoryStorage() });
 
 module.exports = (req, res) => {
-  cors(corsOptions)(req, res, async () => {
-    if (req.method === 'POST') {
+  cors(corsOptions);
       const { nome } = req.body;
       const imagem = req.file.buffer;
 
@@ -26,8 +25,5 @@ module.exports = (req, res) => {
       } catch (error) {
         return res.status(500).json({ erro: error.message });
       }
-    } else {
-      return res.status(405).json({ message: 'Método não permitido' });
-    }
   });
 };
