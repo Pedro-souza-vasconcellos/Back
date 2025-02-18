@@ -10,7 +10,7 @@ const corsOptions = {
 
 const upload = multer({ storage: multer.memoryStorage() });
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
   cors(corsOptions);
       const { nome } = req.body;
       const imagem = req.file.buffer;
